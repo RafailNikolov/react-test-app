@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+#dropdown-basic-button {
+  color: black;
+  background-color: white;
+  border-color: white;
+  box-shadow:none;
+}

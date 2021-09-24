@@ -1,0 +1,19 @@
+{
+    "lang": "gb",
+    "navTitle": "Test App",
+    "btnHome": "Home",
+    "btnContacts": "Contacts",
+    "btnAbout": "About",
+    "home": {
+        "title": "Home Page"
+    },
+    "about": {
+        "title": "About Page"
+    },
+    "contacts" : {
+        "title": "Contact Page"
+    },
+    "noMatch": {
+        "title": "No Match"
+    }
+}
