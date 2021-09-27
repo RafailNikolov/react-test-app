@@ -27,12 +27,12 @@ export const NavigationBar = ({lang, changeLang}) => {
                     <Nav.Item className="custom-navitem-class"><Nav.Link className="custom-navlink-class" href='/contacts'>{lang.btnContacts}</Nav.Link></Nav.Item>
                     <Nav.Item className="custom-navitem-class"><Nav.Link className="custom-navlink-class" href='/about'>{lang.btnAbout}</Nav.Link></Nav.Item>
                     <Nav.Item className="custom-navitem-class">
-                        <DropdownButton id="dropdown-basic-button" title={<FlagIcon code={countryFlag} size={"2x"} />} onSelect={handleSelect}>
+                        <DropdownButton id="dropdown-basic-button" title={<FlagIcon code={countryFlag} size={"1x"} />} onSelect={handleSelect}>
                             <Dropdown.Item eventKey='bg' href="#" onClick={ (e) => { e.preventDefault(); changeLang('bg')}}>
-                                <FlagIcon code={"bg"} size={"2x"} /> Български
+                                <FlagIcon code={"bg"} size={"1x"} /> Български
                             </Dropdown.Item>
                             <Dropdown.Item eventKey='gb' href="#" onClick={ (e) => { e.preventDefault(); changeLang('gb')}}>
-                                <FlagIcon code={"gb"} size={"2x"} /> English
+                                <FlagIcon code={"gb"} size={"1x"} /> English
                             </Dropdown.Item>
                         </DropdownButton>
                     </Nav.Item>
