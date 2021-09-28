@@ -30,7 +30,7 @@ function App() {
             <Route exact path='/' component={() => (<Home lang={language.home}/>)}></Route>
             <Route exact path='/contacts' component={() => (<Contacts lang={language.contacts}/>)}></Route>
             <Route exact path='/about' component={() => (<About lang={language.about}/>)}></Route>
-            <Route component={() => (<NoMatch lang={language.noMmatch}/>)}></Route>
+            <Route component={() => (<NoMatch lang={language.noMatch}/>)}></Route>
           </Switch>
         </BrowserRouter>
 

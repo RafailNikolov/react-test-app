@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container, Image } from 'react-bootstrap';
-import homeImage from "./assets/technology.jpg"
+import homeImage from "./assets/technology.jpg";
+import { useState } from "react";
 
 export const Home = ({lang}) => {
+
+    const [ seconds, setSeconds ] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setSeconds(seconds => seconds + 1);
+          console.log('asdads');
+        }, 1000);
+        return () => clearInterval(interval);
+      }, []);
+
     return (
         <React.Fragment>
-            <Row style={{"text-align" : "center"}} >
+            <Row style={{"textAlign" : "center"}} >
                 <h1>{lang.title}</h1>
+            </Row>
+
+            <Row style={{"textAlign" : "center"}} >
+                <h1>{ seconds }</h1>
             </Row>
             
             <Row>

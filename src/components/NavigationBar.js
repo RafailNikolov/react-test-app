@@ -17,7 +17,7 @@ export const NavigationBar = ({lang, changeLang}) => {
     }
 
     return (
-        <Navbar expand='lg' className="custom-navbar-class">
+        <Navbar expand='lg' className="custom-navbar-class" sticky="top">
             <Image className="custom-image-class" src={logo} rounded/>
             <Navbar.Brand href='/' className="custom-navbar-brand-class">{lang.navTitle}</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
@@ -27,7 +27,7 @@ export const NavigationBar = ({lang, changeLang}) => {
                     <Nav.Item className="custom-navitem-class"><Nav.Link className="custom-navlink-class" href='/contacts'>{lang.btnContacts}</Nav.Link></Nav.Item>
                     <Nav.Item className="custom-navitem-class"><Nav.Link className="custom-navlink-class" href='/about'>{lang.btnAbout}</Nav.Link></Nav.Item>
                     <Nav.Item className="custom-navitem-class">
-                        <DropdownButton id="dropdown-basic-button" title={<FlagIcon code={countryFlag} size={"1x"} />} onSelect={handleSelect}>
+                        <DropdownButton id="dropdown-basic-button" title={<FlagIcon code={countryFlag} size={"2x"} />} onSelect={handleSelect}>
                             <Dropdown.Item eventKey='bg' href="#" onClick={ (e) => { e.preventDefault(); changeLang('bg')}}>
                                 <FlagIcon code={"bg"} size={"1x"} /> Български
                             </Dropdown.Item>
